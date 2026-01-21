@@ -1,0 +1,38 @@
+h1 {
+    color:purple;
+}
+
+body {
+    width: 50%;
+    margin: auto;
+}
+p{
+
+}
+#intro{
+    font-size: 2em;
+}
+
+#byline {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+byline {
+    font-size: 4em;
+}
+
+p.story {
+    
+}
+
+div {
+    border: solid 1px gray;
+}
+
+/* for phones */
+@media (orientation: portrait) {
+    body {
+        width: 100%;
+        font-size: 2em;
+    }
+}
