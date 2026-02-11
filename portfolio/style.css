@@ -1,0 +1,45 @@
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      background: #333;
+      color: white;
+      position: relative;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 1em;
+    }
+
+    .nav-item {
+      padding: 0.5em 1em;
+      color: white;
+      text-decoration: none;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    /* mobile: hide buttons, show hamburger */
+    @media (orientation: portrait) {
+      .nav-buttons {
+        display: none;
+      }
+      
+      .hamburger {
+        display: block;
+      }
+      
+      .nav-buttons.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #333;
+        padding: 1em;
+      }
+    }

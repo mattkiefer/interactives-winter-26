@@ -1,12 +1,23 @@
 <head>
 <link href="style.css" type="text/css" rel="stylesheet" />
+<script src="hello.js"></script>
 </head>
 
 <body>
+<script>console.log('hello again!')</script>
 
 <h1>Rain, windstorms sweep through Chicago overnight</h1>
-<h2> hello world!</h2>
+<script>
 
+
+document.querySelector('h1').innerText='Windy City gets lots of rain';
+
+
+
+document.querySelector('body').style.backgroundColor = "#DDDDDD"
+
+
+</script>
 <div id='byline'>
   <a href="#tagline">
     By Matt Kiefer
@@ -16,7 +27,7 @@
 <!-- not ready for custom html elements
 <byline>Matt Kiefer</byline>
 -->
-<div id="article">
+<div class="article">
 <p id="intro">
       Up to 3 inches of rain drenched Chicago overnight Thursday to Friday,
       leading to hundreds of calls to 311 for flooded streets and basements.
@@ -31,7 +42,13 @@
 
     <img src="preciptotals.png" width="100%" alt="weather map of chicago showing rain accumulating most on the southwest side"/>
     <div class="caption">Here's what's happening in the photo. <span class="credit">Credit: Matt Kiefer</span></div>
+  </div>
 
+  <div class="iframe-container">
+<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/5jlHyDZMJLk?si=PS25Zd6GQw4AGeJR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+<div class="article">
     <p class="story">
       <a
         href="https://www.wbez.org/weather/2026/01/09/record-breaking-rainfall-leaves-hundreds-of-streets-and-basements-flooded"
@@ -51,4 +68,5 @@
       journalist.
     </div>
   </div>
+</div>
 </body>

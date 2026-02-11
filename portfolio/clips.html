@@ -1,0 +1,21 @@
+<head>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <div class="navbar">    
+    <div class="nav-buttons">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="clips.html" class="nav-item">Clips</a>
+    </div>
+    
+    <div class="nav-item hamburger">☰</div>
+  </div>
+Clips
+  <script>
+    document.querySelector('.hamburger').onclick = () => {
+      document.querySelector('.nav-buttons').classList.toggle('active');
+    };
+  </script>
+</body>
+

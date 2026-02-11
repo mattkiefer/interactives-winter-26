@@ -2,10 +2,35 @@ h1 {
     color:purple;
 }
 
-body {
+.article {
     width: 50%;
     margin: auto;
 }
+
+iframe {
+    margin: auto;
+    display: block;
+}
+
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 p{
 
 }
@@ -32,7 +57,7 @@ div {
 
 /* for phones */
 @media (orientation: portrait) {
-    body {
+    article {
         width: 100%;
         font-size: 2em;
     }
