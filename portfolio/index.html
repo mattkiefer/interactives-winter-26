@@ -4,18 +4,154 @@
 <body>
   <div class="navbar">    
     <div class="nav-buttons">
+      <!-- skipping the multipage nav bar for now
       <a href="index.html" class="nav-item">Home</a>
       <a href="about.html" class="nav-item">About</a>
       <a href="clips.html" class="nav-item">Clips</a>
+      -->
+      <a href="#innovation" class="nav-item">Innovation</a>
     </div>
     
     <div class="nav-item hamburger">☰</div>
   </div>
-Home
+
   <script>
     document.querySelector('.hamburger').onclick = () => {
       document.querySelector('.nav-buttons').classList.toggle('active');
     };
   </script>
+
+<!-- hero = headline over img -->
+<div id="hero">
+  <img class="fm" src="imgs/foiamail.jpg" alt="paper airplane with 'FOIA' as tail number trailed by a stream of 1s and 0s"/>
+  <h1>FOIA is your API</h1>
+</div>
+
+<!-- content = regular article text -->
+<div class="content">
+  <p>Five years ago, I tried to automate my way out of a job.</p>
+
+    
+    
+  <p>I was working as a software engineer at the time, taking a kind of sabbatical from journalism. A friend at an investigative newsroom in Chicago asked if I wanted a side gig filing 500 state Freedom of Information Act requests from local governments across Illinois.</p>
+
+    
+    
+  <p>Sounded pretty ambitious. Then the thought crossed my mind: Could a computer program manage a large-scale FOIA campaign?</p>
+
+    
+    
+  <p>The idea seemed kinda sci-fi at first. But I realized all the pieces were there: public records laws allowing for email requests, open-source software to generate and organize FOIA letters, lists of public information officers to contact. Just write a form letter, I figured, plus some code to pull it all together.</p>
+
+    
+    
+  <p>In a technical sense, it helps to think about the computing concept known as an <a href="https://en.wikipedia.org/wiki/Application_programming_interface">application programming interface</a>. APIs allow one application to request information from another.</p>
+
+    
+    
+  <p>From a legal standpoint, local governments have a similar function. Think about it: the federal Freedom of Information Act, and various <a href="http://www.rcfp.org/open-government-guide">state-level</a> versions of the law, serve as protocols for public agencies to respond to records requests.</p>
+
+    
+    
+  <p><a href="https://soundcloud.com/ire-nicar/untitled-1_l">FOIA is an API</a>, I realized.</p>
+
+    
+    
+  <p>It works. I started out by <a href="https://github.com/mattkiefer/foiamachine">hacking</a> <a href="https://github.com/muckrock/foiamachine">FOIAMachine</a> to file batch requests. Later, I built <a href="https://github.com/bettergov/foiamail">FOIAmail</a> to handle mass-scale public records campaigns. These frameworks have helped collect more than 4,000 responses to date through a combination of automated requests and manual follow-ups.</p>
+
+    
+    
+  <p>When I built FOIAmail in 2017, the <a href="http://bettergov.org/">Better Government Association</a> used it to request payroll records from 929 local governments across Illinois. The results beat my own expectations. By the legal response deadline, 82 percent of agencies had responded in some way.</p>
+
+    
+    
+  <p>FOIAmail uses Gmail and automation to help journalists FOIA faster. It generates messages automatically using the Gmail API, then labels incoming mail as the agencies respond. An auto-updating status report keeps track of each agency, its status and a log of correspondence. When a journalist verifies that a response is complete, the email attachments from that agency copy over to a shared file directory.</p>
+
+    
+    
+  <p>By design, the system requires manual checks to verify a response is legit. It's a light touch but it helps everyone sleep at night, knowing things have been checked out by human eyes. Automation only gets you so far. The best newsroom tools allow journalists to do their jobs better and faster, and to spend more of their time following their own instincts and verifying information coming in — whether it was collected by a person or a program.</p>
+
+    
+    
+  <p>So that's where we stand. FOIA automation is a thing now. This has led me to my next question: How can we use this concept to serve the public and advance journalism?</p>
+</div>
+  <div id="innovation"></div>  
+  <img src="imgs/foiamails.jpg" class="fm"/>
+  <p class="cutline">Illustration by <a href="https://twitter.com/lucasiansmith">Lucas Smith</a></p>
+
+    
+<div class="content">
+  <h2>An opportunity to innovate</h2>
+
+    
+    
+  <p>This is a complicated subject at the intersection of law, technology and journalism. Fortunately, I'm in a good position to explore this space.</p>
+
+    
+    
+  <p>This academic year, I am a John S. Knight Journalism fellow at Stanford University, where I'm prototyping systems to monitor public records that are critical to the public interest using FOIA automation and other tools.</p>
+
+    
+    
+  <p>It helps that I've spent time in the trenches of local investigative journalism, doing the important but repetitive work of requesting and processing public records and analyzing and reporting the results.</p>
+
+    
+    
+  <p>Four years ago, I was hired as the first data editor of <a href="https://chicagoreporter.com/">The Chicago Reporter</a>, a small but fierce non-profit with a legacy of investigating issues of race and income inequality. I've learned a <a href="https://www.chicagoreporter.com/how-the-chicago-police-department-fought-and-ultimately-lost-its-foia-battle-to-keep-cop-names-from-the-public/">thing</a> or <a href="https://www.chicagoreporter.com/illinois-attorney-general-to-chicago-police-fulfill-chicago-reporters-foia-request/">two</a> about public records laws and how to take a <a href="https://www.chicagoreporter.com/how-we-investigated-wage-enforcement-at-the-illinois-department-of-labor/">data-driven approach</a> to reporting on civil and human rights. I know firsthand the limits of automation — and where technology can help journalists stay organized while they do the inevitable manual work.</p>
+
+    
+    
+  <p>Automating FOIA and data workflows will only work if it meets the needs of reporters and editors who are out there doing work in the wild</p>
+
+    
+    
+  <p>So much of investigative journalism happens at the local level. The most crucial records — covering topics like criminal justice, economic development, education, elections, housing, parks and recreation, policing, taxation and transportation, to name just a few — can be found scattered throughout municipal offices across the country.</p>
+
+    
+    
+  <p>According to the U.S. Census Bureau, there are <a href="https://www.census.gov/newsroom/releases/archives/governments/cb12-161.html">more than 89,000 local governments</a> in America. Each one varies in size, but taken together, the scale is massive. These agencies may report summary statistics to state and federal authorities, but the stories are in the details. And the paper trail often leads back to a city hall or county courthouse.</p>
+
+    
+    
+  <p>This presents a dilemma for journalism. Local governments maintain records that hold a high value to the public interest. But those records come at a high cost in terms of the effort required to request, process and analyze various data and documents.</p>
+
+    
+    
+  <p>"The desire of government to keep some data secret means there may be significant transaction costs involved in pursuing a story, such as the hassle costs associated with using the Freedom of Information Act to extract documents from the government," Stanford Communications Department Chair Jay Hamilton explains in his book, <a href="https://www.hup.harvard.edu/catalog.php?isbn=9780674545502">Democracy's Detectives</a>.</p>
+
+    
+    
+  <p>But there's hope: "Computational journalism … can lower the costs of discovering watchdog stories, and make it easier (and more profitable) to tell stories in personalized and engaging ways."</p>
+
+    
+    
+  <p>There's an opportunity for automation to illuminate big-picture trends that may otherwise go unnoticed. What if we could identify the most important records kept at the local level, then collect, process and analyze them in an efficient and systematic way? How would that change the game of investigative journalism?</p>
+
+    
+    
+  <p>For instance, can we use these kinds of tools to keep tabs on official misconduct records at police departments across an entire state, or multiple states? Could we build an apparatus to identify voting rights violations in the run up to elections? When we publish data-driven investigations, can we set up continuous monitoring to diagnose whether the situation improves over time, the way a doctor might review a patient's medical chart?</p>
+
+    
+    
+  <p>Let's take a step back, though, and be realistic about things. Journalism doesn't need tools so much as it needs solutions. To that end, automating FOIA and data workflows will only work if it meets the needs of reporters and editors who are out there doing work in the wild, so to speak.</p>
+
+    
+    
+  <p>As an editor who has worked many research-intensive projects, I know that it all comes down to getting the story and getting it right. Technical tools should support operations, not distract from them. FOIAmail, for example, is designed to do one thing: collect the same type of records from many different agencies, with minimal setup and maintenance. It's important to keep things simple and to the point.</p>
+
+    
+    
+  <p>At Stanford, JSK Fellows start the year with a crash course in human-centered design. This includes mapping out the <a href="https://dschool.stanford.edu/resources/map-the-problem-space">problem space</a> to ensure we're focusing on the most important challenges facing journalism, conducting field interviews and qualitative research, and <a href="https://dschool-old.stanford.edu/groups/k12/wiki/afdc3/HowWhy_Laddering.html">laddering</a> to explore all the needs of stakeholders. This training, influenced by the university's <a href="https://dschool.stanford.edu/">d.school</a>, helps fellows avoid the trap of solving a problem without consulting with those affected. This is a well-known problem in design thinking, analogized by the phrase "great landing, wrong airport."</p>
+
+    
+    
+  <p>To that end, I'm consulting with news organizations to design new approaches to large-scale data- and document-driven investigations. I also want to address challenges around processing and interpreting data, including designing an automation pipeline that can help investigative journalism scale.</p>
+
+    
+    
+  <p>During the winter quarter, I'm going to research how newsrooms manage and execute large-scale investigations based on public records. I'm interested in learning about pain points and success stories, including technical details and the practical side of things. If you're interested in discussing this concept, drop me a line: <a href="mailto:mkiefer@stanford.edu">mkiefer@stanford.edu</a>.</p>
+</div>
+
+
 </body>
 

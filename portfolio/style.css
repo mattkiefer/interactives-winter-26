@@ -1,45 +1,94 @@
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding: 1em;
-      background: #333;
-      color: white;
-      position: relative;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    .nav-buttons {
-      display: flex;
-      gap: 1em;
-    }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 
-    .nav-item {
-      padding: 0.5em 1em;
-      color: white;
-      text-decoration: none;
-    }
+.nav-buttons {
+  display: flex;
+  gap: 1em;
+}
 
-    .hamburger {
-      display: none;
-    }
+.nav-item {
+  padding: 0.5em 1em;
+  color: white;
+  text-decoration: none;
+  font-size:1.2em;
+  font-weight:bold;
+}
 
-    /* mobile: hide buttons, show hamburger */
-    @media (orientation: portrait) {
-      .nav-buttons {
-        display: none;
-      }
-      
-      .hamburger {
-        display: block;
-      }
-      
-      .nav-buttons.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #333;
-        padding: 1em;
-      }
-    }
+.hamburger {
+  display: none;
+}
+
+.content {
+  width: 50%;
+  margin: auto;
+  font-size:1.4em;
+}
+
+img.fm{
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+#hero { position: relative; }
+#hero h1 { 
+  position: absolute; 
+  top: 30%; left: 50%; 
+  transform: translate(-50%,-50%); 
+  font-family: 'Impact', Arial Black, sans-serif;
+  font-size: 5em;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 
+    0 0 10px #000, 
+    3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px 0 0 #000;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.cutline {
+  text-align: center;
+}
+
+
+
+/* mobile: hide buttons, show hamburger */
+@media (orientation: portrait) {
+  .nav-buttons {
+    display: none;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  .nav-buttons.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #333;
+    padding: 1em;
+  }
+
+  .content {
+    width: 95%;
+  }
+}
